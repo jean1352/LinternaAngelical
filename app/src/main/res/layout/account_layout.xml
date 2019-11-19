@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/header_account"/>
+    <include layout="@layout/account_publications_layout"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/sign_out_button"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_100"
+        android:backgroundTint="@color/grey_100"
+        android:fontFamily="@font/roboto_light"
+        android:padding="10dp"
+        android:text="Cerrar Sesion"
+        android:textColor="@color/colorPrimaryDark" />
+</LinearLayout>
+

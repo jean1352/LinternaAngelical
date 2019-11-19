@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/frame_image_selector_container"
+                android:padding="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/border_image_profile_settings" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_profile_setting"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:padding="4dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:maxWidth="100dp"
+                    android:textSize="16sp"
+                    android:id="@+id/textview_add_iamge"
+                    android:gravity="center"
+                    android:text="agregar\nfoto"
+                    android:textAllCaps="false"
+                    android:textColor="#7f7fd2" />
+
+            </FrameLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="40">
+
+                <EditText
+                    android:id="@+id/edittext_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textColor="@android:color/holo_red_light"
+                android:fontFamily="@font/roboto_light"
+                android:text="El nombre de usario y la foto de perfil son totalmente publicas y podran ser visto por todos los usuarios de Linterna (Sonido Angelical)" />
+
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

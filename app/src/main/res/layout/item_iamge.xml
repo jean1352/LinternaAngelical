@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:padding="5dp"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_margin="0dp"
+        android:background="@drawable/border_iamge_stories"
+        android:layout_height="70dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:background="#00000000"
+        android:padding="4dp"
+        android:id="@+id/image_profile_status"
+        android:layout_height="70dp" />
+
+</FrameLayout>

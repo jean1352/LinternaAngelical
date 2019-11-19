@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Linterna</string>
+    <string name="title_activity_setting_profile">SettingProfile</string>
+    <string name="report_message">Reporte la publicacion solo si no es un "Meme", nuestra plataforma permite todo tipo de memes, los cuales pueden tener contenido sexual, racista o de "humor negro" en general. Por favor, no la reporte solo porque cree que no es apropiado o solo para molestar al que la publico, esta red fue hecha para que todos disfrutemos de los memes.</string>
+    <string name="report_title">Reportar publicacion</string>
+</resources>

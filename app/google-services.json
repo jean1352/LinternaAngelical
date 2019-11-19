@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "165516152946",
+    "firebase_url": "https://linterna-9f1ba.firebaseio.com",
+    "project_id": "linterna-9f1ba",
+    "storage_bucket": "linterna-9f1ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165516152946:android:2b1d0cb7e43cdde0",
+        "android_client_info": {
+          "package_name": "com.duarus.linternaangelical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165516152946-lrc2530kp8e8eq713fiulvusceso5euu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.duarus.linternaangelical",
+            "certificate_hash": "502c96a683bfa5407e60acdf124defc78bce08ae"
+          }
+        },
+        {
+          "client_id": "165516152946-jt9tq1h8gribse7ek2epq8b58l7o87su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOSXgKi-JnNbCzWMqSiVEUJrgbXRHKpt0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165516152946-jt9tq1h8gribse7ek2epq8b58l7o87su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

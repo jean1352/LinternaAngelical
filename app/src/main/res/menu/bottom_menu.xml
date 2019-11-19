@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_rating"
+            android:title="Escalas"
+            android:icon="@drawable/ic_rating" />
+        <item
+            tools:ignore="MenuTitle"
+            android:id="@+id/nav_toggle_sheet"
+            android:title="Memenet"
+            android:icon="@drawable/comedy" />
+        <item
+            tools:ignore="MenuTitle"
+            android:id="@+id/nav_user"
+            android:title="Mi cuenta"
+            android:icon="@drawable/ic_user" />
+    </group>
+
+</menu>

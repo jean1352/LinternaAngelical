@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_image_account_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/border_iamge_stories" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_profile_account"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_user_b"
+            android:background="#00000000"
+            android:padding="4dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/textview_name_user_account"
+        style="@style/TextAppearance.Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="7dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?android:attr/listDivider" />
+</LinearLayout>

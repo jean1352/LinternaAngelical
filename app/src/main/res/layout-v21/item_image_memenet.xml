@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey_100"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_gravity="center_vertical"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:layout_height="40dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="35dp"
+                    android:id="@+id/profile_iamge_memenet_publication"
+                    android:background="@color/white"
+                    android:layout_height="35dp"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#000"
+                    android:id="@+id/textview_user_name_memenet"
+                    style="@style/TextAppearance.Name"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/profile_iamge_memenet_publication" />
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/divider0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/grey_100"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/iamge_view_big_memenet"
+                    android:background="@color/white"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/ic_user_m"
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"
+                    android:layout_height="wrap_content"
+                     />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/circular_progress_bar"
+                    android:background="@drawable/circle_shape"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:max="100"
+                    android:progress="65" />
+
+            </LinearLayout>
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="1dp"
+                android:background="?android:attr/listDivider" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:layout_height="45dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/textview_likes_counter_memenet"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true" />
+                <android.support.v7.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_action_download"
+                    android:id="@+id/button_download"
+                    android:background="@drawable/custom_ripple_borderless"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_action_report"
+                    android:layout_toLeftOf="@id/button_download"
+                    android:layout_margin="5dp"
+                    android:id="@+id/button_report"
+                    android:background="@drawable/custom_ripple_borderless"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/button_download" />
+                <android.support.v7.widget.AppCompatImageButton
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_action_like"
+                    android:layout_margin="5dp"
+                    android:id="@+id/button_like"
+                    android:background="@drawable/custom_ripple_borderless"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/button_report" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
